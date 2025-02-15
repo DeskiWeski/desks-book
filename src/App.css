@@ -1,0 +1,82 @@
+/* App.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0e6d6;
+}
+
+.container {
+  position: relative;
+}
+
+.flip-book {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.page-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 2em;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  /* Recommended dimensions: 800px width x 1000px height */
+}
+
+.page-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+.page-footer {
+  text-align: right;
+  font-size: 0.8em;
+  color: #888;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: -50px;
+}
+
+.next-button {
+  right: -50px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
